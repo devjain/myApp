@@ -1,38 +1,139 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: #269faf;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+.form-container, .setdata{
+  width: 450px;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding:15px;
+  box-shadow: 0px 0px 41px 0px rgba(0, 0, 0, 0.34);
+  -webkit-box-shadow: 0px 0px 41px 0px rgba(0, 0, 0, 0.34);
+  background: #fff;
+}
+.form-container h1, .setdata h1{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+
+}
+.form-group{
+  margin-bottom: 15px;
+}
+.form-control{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #000;
+}
+textarea.form-control{
+  height: 50px;
+  resize: none;
+}
+.form-control:focus{
+  outline: none;
+  -webkit-outline: none;
+}
+button{
+  background: #e74c70;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.5s ease 0s;
+}
+button:hover{
+  background: #d30a39; 
+
 }
